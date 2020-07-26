@@ -21,10 +21,16 @@
         <mockito.junit5.version>2.25.1</mockito.junit5.version>
         <junit4.version>4.12</junit4.version>
         <assertj-core.version>3.14.0</assertj-core.version>
+        <springframework.version>5.1.8.RELEASE</springframework.version>
 
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -43,6 +49,12 @@
         </dependency>
 
         <!-- test -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${springframework.version}</version>
+            <scope>test</scope>
+        </dependency>
         <!-- Jupiter API and the JUnit Jupiter TestEngine implementation -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
