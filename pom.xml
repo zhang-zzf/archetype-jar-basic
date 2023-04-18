@@ -23,9 +23,6 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
 
-        <!--启动类-->
-        <Main-Class>com.github.zzf.Application</Main-Class>
-
     </properties>
 
     <dependencies>

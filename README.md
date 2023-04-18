@@ -1,5 +1,9 @@
 ## 构建历史
 
+### jar-basic-archetype 1.1-RELEASE
+
+- spring-boot 2.5.3
+
 ### jar-basic-archetype 1.0-RELEASE
 
 - lombok
