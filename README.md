@@ -36,3 +36,28 @@
    	<maven.compiler.target>1.8</maven.compiler.target>
    </properties>
    ```
+
+## 制作本地 archetype
+
+```text
+mvn archetype:create-from-project
+rm -rf target/generated-sources/archetype/src/main/resources/archetype-resources/.idea 
+cp .gitignore target/generated-sources/archetype/src/main/resources/archetype-resources
+#  <Main-Class>${groupId}.Application</Main-Class>
+vim target/generated-sources/archetype/src/main/resources/archetype-resources/pom.xml
+
+# cp .gitignore to the target jar
+# add below config to maven-archetype-plugin
+# <configuration><useDefaultExcludes>false</useDefaultExcludes></configuration>
+vim target/generated-sources/archetype/pom.xml
+
+cd target/generated-sources/archetype
+mvn clean install
+mvn archetype:crawl
+```
+
+## 从 archetype 创建项目
+
+```text
+
+```
