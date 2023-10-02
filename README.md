@@ -54,10 +54,30 @@ vim target/generated-sources/archetype/pom.xml
 cd target/generated-sources/archetype
 mvn clean install
 mvn archetype:crawl
+# 推送到远程仓库
+# 添加 <distributionManagement>
+vim target/generated-sources/archetype/pom.xml
+mvn clean deploy
 ```
 
 ## 从 archetype 创建项目
 
 ```text
+
+mvn archetype:generate \
+-DarchetypeCatalog=local \
+-DarchetypeGroupId=com.github.zzf \
+-DarchetypeArtifactId=jar-basic-archetype \
+-DarchetypeVersion=1.1-RELEASE \
+-DinteractiveMode=true
+
+
+mvn archetype:generate \
+-DarchetypeCatalog=local \
+-DarchetypeGroupId=com.github.zzf \
+-DarchetypeArtifactId=jar-basic-archetype \
+-DinteractiveMode=true
+-DarchetypeVersion=1.1-RELEASE \
+-DinteractiveMode=true
 
 ```
