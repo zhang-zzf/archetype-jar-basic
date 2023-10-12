@@ -68,7 +68,7 @@ mvn archetype:generate \
 -DarchetypeCatalog=local \
 -DarchetypeGroupId=com.github.zzf \
 -DarchetypeArtifactId=jar-basic-archetype \
--DarchetypeVersion=1.1-RELEASE \
+-DarchetypeVersion=1.0-RELEASE \
 -DinteractiveMode=true
 
 
